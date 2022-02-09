@@ -1,0 +1,21 @@
+body {
+  font-family: "Jost", sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background: #2B2C3A;
+}
+
+.topbar {
+  border-bottom-color: #D8D8D8;
+}
+
+.topbar__wrapper {
+  padding-top: 1.4rem;
+}
+
+/*# sourceMappingURL=style.css.map */
