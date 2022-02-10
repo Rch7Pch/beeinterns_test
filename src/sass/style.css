@@ -10,12 +10,165 @@ body {
   background: #2B2C3A;
 }
 
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.ico {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.icon-square {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 100%;
+}
+.icon-square_green {
+  background: #24CB8D;
+}
+
+.icon-rectangle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 1.2rem rgba(255, 71, 56, 0.5);
+}
+.icon-rectangle_red {
+  background-color: #FF4738;
+}
+
+.ico_lightning {
+  width: 0.7rem;
+  height: 1.2rem;
+  background-image: url("../img/icon/lightning.svg");
+}
+
+.account-info {
+  display: flex;
+  align-items: center;
+  margin-left: 1.4rem;
+}
+
+.account__name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1rem;
+  color: #FFFFFF;
+}
+
+.account__status {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1rem;
+  color: #24CB8D;
+}
+
+.account__tariff {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: linear-gradient(90deg, #6B69F9 0%, #6F6EFF 100%);
+  box-shadow: 0 0 1.2rem rgba(111, 110, 255, 0.5);
+  border-radius: 0.4rem;
+  padding: 0.2rem 1.1rem 0.2rem 0.8rem;
+  margin-left: 1.5rem;
+}
+
+.topbar__text {
+  display: flex;
+}
+
+.topbar__nav {
+  display: flex;
+  align-items: center;
+}
+
+.topbar__nav-list {
+  margin-right: 2.8rem;
+}
+
+.topbar__nav::after {
+  content: "";
+  background: #D8D8D8;
+  opacity: 0.1;
+  width: 0.1rem;
+  height: 2.4rem;
+}
+
+.topbar__nav-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1rem;
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+
+.topbar__coins {
+  display: flex;
+  align-items: center;
+}
+
+.coins__text {
+  margin-right: 1rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 10px;
+  color: #FFFFFF;
+  background: #FFFFFF;
+  opacity: 0.06;
+  border-radius: 5px;
+}
+
+.coins__text > span:nth-child(3) {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 10px;
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+
+.leftbar {
+  flex: 1;
+  height: calc(100vh - 50px);
+  background-color: rgba(156, 165, 236, 0.04);
+  position: sticky;
+  top: 50px;
+}
+
 .topbar {
-  border-bottom-color: #D8D8D8;
+  flex: 2;
+  border-bottom: 0.1rem solid #D8D8D8;
+  width: 100%;
+  height: 7.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .topbar__wrapper {
-  padding-top: 1.4rem;
+  padding: 1.4rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 /*# sourceMappingURL=style.css.map */

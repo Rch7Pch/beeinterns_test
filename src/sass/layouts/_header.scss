@@ -1,7 +1,17 @@
 .topbar {
-  border-bottom-color: $color-border-bottom;
+  flex: 2;
+  border-bottom: .1rem solid $color-border-bottom;
+  width: 100%;
+  height: 7.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .topbar__wrapper {
-  padding-top: 1.4rem;
+  padding: 1.4rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
+

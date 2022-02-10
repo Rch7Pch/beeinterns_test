@@ -5,7 +5,11 @@
 @import "abstract/placeholders";
 
 @import "base/base";
+@import "base/icons";
 
 @import "components/account-info";
+@import "components/topbar";
+@import "components/leftbar";
 
 @import "layouts/header";
+@import "layouts/main";

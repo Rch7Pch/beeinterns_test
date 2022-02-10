@@ -1,0 +1,39 @@
+.ico {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.icon-square {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 100%;
+
+  &_green {
+    background: $color-green;
+  }
+}
+
+.icon-rectangle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 0.4rem;
+
+  box-shadow: 0 0 1.2rem rgba(255, 71, 56, 0.5);
+
+  &_red {
+    background-color: $color-red;
+  }
+}
+
+.ico_lightning {
+  width: 0.7rem;
+  height: 1.2rem;
+  background-image: url("../img/icon/lightning.svg");
+}
