@@ -1,10 +1,9 @@
 .topbar {
-  flex: 2;
+  flex: 3;
   border-bottom: .1rem solid $color-border-bottom;
   width: 100%;
   height: 7.2rem;
-  position: sticky;
-  top: 0;
+  position: static;
   z-index: 999;
 }
 
@@ -12,6 +11,6 @@
   padding: 1.4rem 0;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 

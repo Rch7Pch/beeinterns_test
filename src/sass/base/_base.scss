@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  margin: 0;
   background: $color-background;
   @extend %font-prim;
 }
@@ -13,4 +14,8 @@ a {
 
 li {
   list-style: none;
+}
+
+ul {
+  padding-left: 0;
 }

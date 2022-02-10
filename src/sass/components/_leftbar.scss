@@ -1,7 +1,38 @@
 .leftbar {
   flex: 1;
-  height: calc(100vh - 50px);
   background-color: $color-background-add;
   position: sticky;
-  top: 50px;
+  width: 280px;
+}
+
+.leftbar__wrapper {
+  padding-top: 9px;
+}
+
+.leftbar__header {
+  border-bottom: .1rem solid $color-border-bottom;
+  padding: 0 11.0rem 1.5rem 3.0rem;
+}
+
+.leftbar-year {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10.7331px;
+  line-height: 1.6rem;
+  color: $color-white;
+
+  margin-left: 68px;
+}
+
+.leftbar-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22.1818px;
+  line-height: 3.2rem;
+  color: $color-white;
+  margin: 0;
+}
+
+.leftbar__content {
+  padding-left: 3rem;
 }
