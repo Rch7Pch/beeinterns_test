@@ -36,8 +36,8 @@
           </div>
 
           <div class="leftbar__content">
-            <ul class="leftbar-menu">
-              <li>Программа
+            <ul class="leftbar-menu-up">
+              <li class="menu__item">Программа
 <!--                <ul>-->
 <!--                  <li>-->
 <!--                    <span class="ico ico_lightning"></span>-->
@@ -66,155 +66,49 @@
 <!--                </ul>-->
               </li>
 
-              <li>Менторы
-<!--                <ul>-->
-<!--                  <li>-->
-<!--                    <span class="ico ico_lightning"></span>-->
-<!--                    HTML/CSS-->
-<!--                  </li>-->
-<!--                  <li>-->
-<!--                    <span class="ico ico_lightning"></span>-->
-<!--                    HTML/CSS-->
-<!--                  </li>-->
-<!--                  <li>-->
-<!--                    <span class="ico ico_lightning"></span>-->
-<!--                    HTML/CSS-->
-<!--                  </li>-->
-<!--                  <li>-->
-<!--                    <span class="ico ico_lightning"></span>-->
-<!--                    HTML/CSS-->
-<!--                  </li>-->
-<!--                  <li>-->
-<!--                    <span class="ico ico_lightning"></span>-->
-<!--                    HTML/CSS-->
-<!--                  </li>-->
-<!--                  <li>-->
-<!--                    <span class="ico ico_lightning"></span>-->
-<!--                    HTML/CSS-->
-<!--                  </li>-->
-<!--                </ul>-->
-              </li>
-              <li>Лекции
-                <ul>
-                  <li>
+              <li class="menu__item">Менторы</li>
+              <li class="menu__item">Лекции
+                <ul class="leftbar-menu-bottom">
+                  <li class="menu-bottom__item">
                     <span class="ico ico_action"></span>
-                    HTML/CSS
+                    <a class="menu-bottom__item-link">HTML/CSS</a>
                   </li>
-                  <li>
+                  <li class="menu-bottom__item">
                     <span class="ico ico_adventure"></span>
-                    GIT
+                    <a class="menu-bottom__item-link">GIT</a>
                   </li>
-                  <li>
+                  <li class="menu-bottom__item">
                     <span class="ico ico_casual"></span>
-                    JavaScript
+                    <a class="menu-bottom__item-link">JavaScript</a>
                   </li>
-                  <li>
+                  <li class="menu-bottom__item">
                     <span class="ico ico_strategy"></span>
-                    React
+                    <a class="menu-bottom__item-link">React</a>
                   </li>
-                  <li>
-                    <span class="ico ico_lightning"></span>
-                    HTML/CSS
+                  <li class="menu-bottom__item">
+                    <span class="ico ico_intellectual"></span>
+                    <a class="menu-bottom__item-link">Angular</a>
                   </li>
-                  <li>
-                    <span class="ico ico_lightning"></span>
-                    HTML/CSS
+                  <li class="menu-bottom__item">
+                    <span class="ico ico_sport"></span>
+                    <a class="menu-bottom__item-link">Date</a>
                   </li>
                 </ul>
               </li>
-              <li>Правила поступления
-<!--                <ul>-->
-<!--                  <li>-->
-<!--                    <span class="ico ico_lightning"></span>-->
-<!--                    HTML/CSS-->
-<!--                  </li>-->
-<!--                  <li>-->
-<!--                    <span class="ico ico_lightning"></span>-->
-<!--                    HTML/CSS-->
-<!--                  </li>-->
-<!--                  <li>-->
-<!--                    <span class="ico ico_lightning"></span>-->
-<!--                    HTML/CSS-->
-<!--                  </li>-->
-<!--                  <li>-->
-<!--                    <span class="ico ico_lightning"></span>-->
-<!--                    HTML/CSS-->
-<!--                  </li>-->
-<!--                  <li>-->
-<!--                    <span class="ico ico_lightning"></span>-->
-<!--                    HTML/CSS-->
-<!--                  </li>-->
-<!--                  <li>-->
-<!--                    <span class="ico ico_lightning"></span>-->
-<!--                    HTML/CSS-->
-<!--                  </li>-->
-<!--                </ul>-->
-              </li>
-              <li>Новости
-<!--                <ul>-->
-<!--                  <li>-->
-<!--                    <span class="ico ico_lightning"></span>-->
-<!--                    HTML/CSS-->
-<!--                  </li>-->
-<!--                  <li>-->
-<!--                    <span class="ico ico_lightning"></span>-->
-<!--                    HTML/CSS-->
-<!--                  </li>-->
-<!--                  <li>-->
-<!--                    <span class="ico ico_lightning"></span>-->
-<!--                    HTML/CSS-->
-<!--                  </li>-->
-<!--                  <li>-->
-<!--                    <span class="ico ico_lightning"></span>-->
-<!--                    HTML/CSS-->
-<!--                  </li>-->
-<!--                  <li>-->
-<!--                    <span class="ico ico_lightning"></span>-->
-<!--                    HTML/CSS-->
-<!--                  </li>-->
-<!--                  <li>-->
-<!--                    <span class="ico ico_lightning"></span>-->
-<!--                    HTML/CSS-->
-<!--                  </li>-->
-<!--                </ul>-->
-              </li>
-              <li>Обратная связь
-<!--                <ul>-->
-<!--                  <li>-->
-<!--                    <span class="ico ico_lightning"></span>-->
-<!--                    HTML/CSS-->
-<!--                  </li>-->
-<!--                  <li>-->
-<!--                    <span class="ico ico_lightning"></span>-->
-<!--                    HTML/CSS-->
-<!--                  </li>-->
-<!--                  <li>-->
-<!--                    <span class="ico ico_lightning"></span>-->
-<!--                    HTML/CSS-->
-<!--                  </li>-->
-<!--                  <li>-->
-<!--                    <span class="ico ico_lightning"></span>-->
-<!--                    HTML/CSS-->
-<!--                  </li>-->
-<!--                  <li>-->
-<!--                    <span class="ico ico_lightning"></span>-->
-<!--                    HTML/CSS-->
-<!--                  </li>-->
-<!--                  <li>-->
-<!--                    <span class="ico ico_lightning"></span>-->
-<!--                    HTML/CSS-->
-<!--                  </li>-->
-<!--                </ul>-->
-              </li>
+              <li class="menu__item">Правила поступления</li>
+              <li class="menu__item">Новости</li>
+              <li class="menu__item">Обратная связь</li>
             </ul>
           </div>
 
           <div class="leftbar__footer">
-            <div class="leftba-switcher">
-              <h4>Получить рассылку</h4>
+            <div class="leftbar-switcher">
+              <h4 class="leftbar__footer-text">
+                <a href="#" class="leftbar__footer-text-link">Получить рассылку</a>
+              </h4>
               <label class="switch">
                 <input type="checkbox" checked>
-                <span class="switch round"></span>
+                <span class="slider round"></span>
               </label>
             </div>
           </div>
@@ -257,24 +151,175 @@
           </div>
         </div>
       </div>
+  </div>
 
-      <div class="lectures">
-        <div class="lectures__header">
-          <div class="lectures__header-text">
-            <h3>Базовый уровень</h3>
-            <h1>HTML/CSS</h1>
-          </div>
-          <div class="lectures__header-nav">
-            <div class="lectures__button">
-              <button type="button" class="button button_colored">Все лекции</button>
+  <section class="weekly">
+
+    <div class="weekly_quests ">
+      <div class="weekly__header">
+        <div class="weekly__header-text">
+          <h3 class="weekly__header-desc">Базовый уровень</h3>
+          <h1 class="weekly__header-title">HTML/CSS</h1>
+        </div>
+
+        <div class="weekly__button">
+          <button type="button" class="button button_colored">Все лекции</button>
+          <button type="button" class="arrow_left"></button>
+          <button type="button" class="arrow_right"></button>
+        </div>
+      </div>
+
+      <div class="weekly__content">
+        <div class="cards">
+
+          <div class="card">
+            <span>Лекция</span>
+            <img src="src/img/weekly/weekly1.png" alt="Структура HTM img curses" width="255" height="144">
+            <div class="card__content">
+              <h1 class="card__title">Структура HTML</h1>
+              <p class="card__desc">Назначение блоков: head, body</p>
             </div>
+            <div class="card__footer">
+              <span class="">01.02.2022</span>
+              <div class="card__button">
+                <button type="button" class="button button_colored">Смотреть</button>
+              </div>
+            </div>
+          </div>
 
+          <div class="card">
+            <span>Лекция</span>
+            <img src="src/img/weekly/weekly2.png" alt="Структура HTM img curses" width="255" height="144">
+            <div class="card__content">
+              <h1 class="card__title">Подключение стилей</h1>
+              <p class="card__desc">Виды подключения стилей. Подключение шрифтов</p>
+            </div>
+            <div class="card__footer">
+              <span>01.02.2022</span>
+              <div class="card__button">
+                <button type="button" class="button button_colored">Смотреть</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <span>Лекция</span>
+            <img src="src/img/weekly/weekly3.png" alt="Структура HTM img curses" width="255" height="144">
+            <div class="card__content">
+              <h1 class="card__title">CSS</h1>
+              <p class="card__desc">Базовый синтаксис CSS: селекторы, классы</p>
+            </div>
+            <div class="card__footer">
+              <span>01.02.2022</span>
+              <div class="card__button">
+                <button type="button" class="button button_colored">Смотреть</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <span>Лекция</span>
+            <img src="src/img/weekly/weekly4.png" alt="Структура HTM img curses" width="255" height="144">
+            <div class="card__content">
+              <h1 class="card__title">Наследие и каскад</h1>
+              <p class="card__desc">Наследие и каскад</p>
+            </div>
+            <div class="card__footer">
+              <span>01.02.2022</span>
+              <div class="card__button">
+                <button type="button" class="button button_colored">Смотреть</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="weekly_quests ">
+      <div class="weekly__header">
+        <div class="weekly__header-text">
+          <h3 class="weekly__header-desc">Продвинутый уровень</h3>
+          <h1 class="weekly__header-title">HTML/CSS</h1>
+        </div>
+        <div class="weekly__header-nav">
+          <div class="weekly__button">
+            <button type="button" class="button button_colored">Все лекции</button>
+            <button type="button" class="arrow_left"></button>
+            <button type="button" class="arrow_right"></button>
           </div>
         </div>
       </div>
 
-  </div>
+      <div class="weekly__content">
+        <div class="cards">
 
+          <div class="card">
+            <span>Лекция</span>
+            <img src="src/img/weekly/weekly1.png" alt="Структура HTM img curses" width="255" height="144">
+            <div class="card__content">
+              <h1 class="card__title">HTML-формы</h1>
+              <p class="card__desc">HTML-формы</p>
+            </div>
+            <div class="card__footer">
+              <span>01.02.2022</span>
+              <div class="card__button">
+                <button type="button" class="button button_colored">Смотреть</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <span>Лекция</span>
+            <img src="src/img/weekly/weekly2.png" alt="Структура HTM img curses" width="255" height="144">
+            <div class="card__content">
+              <h1 class="card__title">Flex</h1>
+              <p class="card__desc">Принципы современной верстки сайта на flex</p>
+            </div>
+            <div class="card__footer">
+              <span>01.02.2022</span>
+              <div class="card__button">
+                <button type="button" class="button button_colored">Смотреть</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <span>Лекция</span>
+            <img src="src/img/weekly/weekly3.png" alt="Структура HTM img curses" width="255" height="144">
+            <div class="card__content">
+              <h1 class="card__title">Media и viewport</h1>
+              <p class="card__desc">Адаптивная верстка. Использование media и viewport</p>
+            </div>
+            <div class="card__footer">
+              <span>01.02.2022</span>
+              <div class="card__button">
+                <button type="button" class="button button_colored">Смотреть</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <span>Лекция</span>
+            <img src="src/img/weekly/weekly4.png" alt="Структура HTM img curses" width="255" height="144">
+            <div class="card__content">
+              <h1 class="card__title">CSS Grid</h1>
+              <p class="card__desc">CSS Grid</p>
+            </div>
+            <div class="card__footer">
+              <span>01.02.2022</span>
+              <div class="card__button">
+                <button type="button" class="button button_colored">Смотреть</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </section>
 
 
 

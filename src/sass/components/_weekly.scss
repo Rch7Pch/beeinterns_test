@@ -1,0 +1,110 @@
+.weekly {
+  margin: 4.0rem 5.5rem 0;
+}
+
+.weekly_quests {
+  margin-bottom: 6.0rem;
+}
+
+.weekly__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+
+.weekly__header-desc {
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $color-white;
+  opacity: 0.4;
+  margin-bottom: .7rem;
+}
+
+.weekly__header-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  width: 255px;
+  height: 294px;
+  margin-right: 11px;
+  background: #373846;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.card>span {
+  width: 5.0rem;
+  height: 2.0rem;
+  position: absolute;
+  margin: 1.5rem;
+  padding: .4rem .5rem .4rem .6rem;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: #FFFFFF;
+
+  background: #6F6EFF;
+  border-radius: 3px;
+}
+
+.card__content {
+  margin: 1.0rem 2.5rem 3.3rem 1.5rem;
+}
+
+.card__title {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 12px;
+  color: #FFFFFF;
+}
+
+.card__desc {
+  margin-top: 1.0rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.card__footer {
+  margin: 1.5rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.card__footer::before {
+  content: '';
+  height: .1rem;
+  width: 10px;
+  margin: 0;
+  top: 0;
+  position: relative;
+  border-bottom: .1rem solid $color-border-bottom;
+}
+
+.card__footer span {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 10px;
+  color: #FFFFFF;
+
+}

@@ -1,0 +1,38 @@
+.button {
+  width: 8.6rem;
+  height: 3.0rem;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+
+  border: none;
+  color: $color-white;
+
+  cursor: pointer;
+
+  &_colored {
+    background: linear-gradient(90deg, #6B69F9 0%, #6F6EFF 100%);
+    border-radius: .4rem;
+  }
+}
+
+.arrow_right, .arrow_left {
+  width: 3.0rem;
+  height: 3.0rem;
+  padding: 1.0rem 2.0rem;
+  background: transparent;
+  border: .1rem solid rgba(255, 255, 255, 0.15);;
+  border-radius: .4rem;
+  cursor: pointer;
+}
+
+.arrow_left {
+  background: url("../img/icon/left.svg") no-repeat center;
+  margin-left: .5rem;
+}
+
+.arrow_right {
+  background: url("../img/icon/right.svg") no-repeat center;
+}

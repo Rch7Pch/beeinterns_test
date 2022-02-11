@@ -1,0 +1,37 @@
+
+.menu__item {
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 2.0rem;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+
+  color:$color-white;
+  cursor: pointer;
+  margin-bottom: 1.3rem;
+}
+
+.leftbar-menu-bottom {
+  margin-top: 1.8rem;
+  margin-bottom: 2.0rem;
+}
+
+.menu-bottom__item {
+  margin-bottom: 1.5rem;
+  height: 4.0rem;
+}
+
+.menu-bottom__item-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.0rem;
+  color: $color-white;
+  opacity: 0.5;
+  margin-left: 2.4rem;
+}
+
+.menu-bottom__item:hover {
+  background: linear-gradient(135deg, #FFFFFF 0%, #FFFFFF 93.97%);
+  opacity: 0.03;
+}
