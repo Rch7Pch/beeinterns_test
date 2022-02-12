@@ -1,4 +1,5 @@
 .weekly {
+  flex: 4 1;
   margin: 4.0rem 5.5rem 0;
 }
 
@@ -33,12 +34,12 @@
 .cards {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .card {
   width: 255px;
   height: 294px;
-  margin-right: 11px;
   background: #373846;
   border-radius: 6px;
   cursor: pointer;

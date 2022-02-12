@@ -1,10 +1,11 @@
 .topbar {
-  flex: 3;
-  border-bottom: .1rem solid $color-border-bottom;
-  width: 100%;
+  border-bottom: .1rem solid rgb(216, 216, 216, 0.1);;
   height: 7.2rem;
-  position: static;
+  position: sticky;
+  background: $color-background;
   z-index: 999;
+  top: 0;
+  margin-left: 280px;
 }
 
 .topbar__wrapper {
