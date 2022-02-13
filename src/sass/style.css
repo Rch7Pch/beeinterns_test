@@ -2,7 +2,7 @@
   font-family: "Jost", sans-serif;
 }
 
-.card, .menu-bottom__item:hover, .topbar__nav-link, .arrow_right, .arrow_left, .button {
+.card, .menu-bottom__item:hover, .leftbar__footer-text-link, .topbar__nav-link, .arrow_right, .arrow_left, .button {
   transition: all 0.3s ease-out;
 }
 
@@ -314,6 +314,9 @@ h1, h3, p {
   color: #FFFFFF;
   opacity: 0.5;
 }
+.leftbar__footer-text-link:hover {
+  opacity: 1;
+}
 
 .leftbar-switcher {
   display: flex;
@@ -325,7 +328,7 @@ h1, h3, p {
 .switch {
   position: relative;
   display: inline-block;
-  width: 5rem;
+  width: 4.2rem;
   height: 2.2rem;
 }
 
@@ -342,7 +345,6 @@ h1, h3, p {
   bottom: 0;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  opacity: 0.2;
   border: 0.1rem solid #FFFFFF;
   background: transparent;
 }
@@ -352,21 +354,20 @@ h1, h3, p {
   content: "";
   width: 1.6rem;
   height: 1.6rem;
-  left: 0.4rem;
-  bottom: 0.4rem;
+  bottom: 0.2rem;
   background-color: #6F6EFF;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 input:checked + .slider {
-  opacity: 100;
-  box-shadow: 0 0 12px rgba(111, 110, 255, 0.5);
+  color: #6F6EFF;
+  box-shadow: 0 0 1.2rem rgba(111, 110, 255, 0.5);
 }
 
 input:focus + .slider {
-  background-color: #6F6EFF;
-  box-shadow: 0 0 12px rgba(111, 110, 255, 0.5);
+  color: #6F6EFF;
+  box-shadow: 0 0 1.2rem rgba(111, 110, 255, 0.5);
 }
 
 input:checked + .slider:before {

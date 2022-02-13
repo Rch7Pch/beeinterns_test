@@ -45,6 +45,12 @@
   @include font($size: 1.4rem, $height: 1.0rem, $weight: 400, $style: normal);
   color: $color-white;
   opacity: 0.5;
+
+  @extend %transition;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .leftbar-switcher {
@@ -57,7 +63,7 @@
 .switch {
   position: relative;
   display: inline-block;
-  width: 5.0rem;
+  width: 4.2rem;
   height: 2.2rem;
 }
 
@@ -76,7 +82,7 @@
   -webkit-transition: .4s;
   transition: .4s;
 
-  opacity: 0.2;
+  //opacity: 0.2;
   border: .1rem solid $color-white;
   background: transparent;
 }
@@ -86,21 +92,23 @@
   content: "";
   width: 1.6rem;
   height: 1.6rem;
-  left: .4rem;
-  bottom: .4rem;
+  //left: -.4rem;
+  bottom: .2rem;
   background-color: $color-add;
   -webkit-transition: .4s;
   transition: .4s;
 }
 
 input:checked + .slider {
-  opacity: 100;
-  box-shadow: 0 0 12px rgba(111, 110, 255, 0.5);
+  color: $color-add;
+  box-shadow: 0 0 1.2rem rgba(111, 110, 255, 0.5);
+
+  //opacity: 0.2;
 }
 
 input:focus + .slider {
-  background-color: $color-add;
-  box-shadow: 0 0 12px rgba(111, 110, 255, 0.5);
+  color: $color-add;
+  box-shadow: 0 0 1.2rem rgba(111, 110, 255, 0.5);
 }
 
 input:checked + .slider:before {
