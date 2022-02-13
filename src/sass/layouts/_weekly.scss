@@ -1,7 +1,5 @@
 .weekly {
   margin: 11.2rem 5.5rem 0 5.5rem;
-  //display: flex;
-  //flex-direction: column;
   position: absolute;
 }
 
@@ -17,8 +15,8 @@
 
 .weekly__header-desc {
   font-weight: normal;
-  font-size: 11px;
-  line-height: 16px;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
   text-transform: uppercase;
   color: $color-white;
   opacity: 0.4;
@@ -28,8 +26,8 @@
 .weekly__header-title {
   font-style: normal;
   font-weight: normal;
-  font-size: 22px;
-  line-height: 18px;
+  font-size: 2.2rem;
+  line-height: 1.8rem;
   color: #FFFFFF;
 }
 
@@ -41,11 +39,17 @@
 
 .card {
   width: 255px;
-  height: 294px;
-  background: #373846;
-  border-radius: 6px;
+  background: $color-card;
+  border-radius: .6rem;
   cursor: pointer;
   margin-right: 1.1rem;
+
+  @extend %transition;
+
+  &:hover {
+    box-shadow: 0 0 12px rgba(111, 110, 255, 0.5);
+    transform: scale(1.1);
+  }
 }
 
 .card:nth-child(4) {
@@ -60,34 +64,36 @@
   padding: .4rem .5rem .4rem .6rem;
 
   font-weight: 400;
-  font-size: 12px;
-  line-height: 12px;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
   text-align: center;
-  color: #FFFFFF;
+  color: $color-white;
 
-  background: #6F6EFF;
-  border-radius: 3px;
+  background: $color-add;
+  border-radius: .3rem;
 }
 
 .card__content {
   margin: 1.0rem 2.5rem 3.3rem 1.5rem;
+  border-bottom: 0.1rem solid rgba(216, 216, 216, 0.1);
+  padding-bottom: 3.3rem;
 }
 
 .card__title {
   font-weight: normal;
-  font-size: 16px;
-  line-height: 12px;
-  color: #FFFFFF;
+  font-size: 1.6rem;
+  line-height: 1.2rem;
+  color: $color-white;
 }
 
 .card__desc {
   margin-top: 1.0rem;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
 
-  color: #FFFFFF;
+  color: $color-white;
   opacity: 0.5;
 }
 
@@ -96,23 +102,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
-}
-
-.card__footer::before {
-  content: '';
-  height: .1rem;
-  width: 10px;
-  margin: 0;
-  top: 0;
-  position: relative;
-  border-bottom: .1rem solid $color-border-bottom;
 }
 
 .card__footer span {
   font-weight: normal;
-  font-size: 13px;
-  line-height: 10px;
-  color: #FFFFFF;
-
+  font-size: 1.3rem;
+  line-height: 1.0rem;
+  color: $color-white;
 }
