@@ -1,7 +1,5 @@
 .menu__item {
-  font-weight: normal;
-  font-size: 1.4rem;
-  line-height: 2.0rem;
+  @include font($size: 1.4rem, $height: 2.0rem, $weight: 400, $style: normal);
   letter-spacing: .1rem;
   text-transform: uppercase;
 
@@ -77,10 +75,7 @@
 }
 
 .menu-bottom__item-link {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.4rem;
-  line-height: 1.0rem;
+  @include font($size: 1.4rem, $height: 1.0rem, $weight: 400, $style: normal);
   color: $color-white;
   opacity: 0.5;
   margin-left: 2.4rem;

@@ -20,20 +20,13 @@
 }
 
 .leftbar-year {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 10.7331px;
-  line-height: 1.6rem;
+  @include font($size: 10.7331px, $height: 1.6rem, $weight: 500, $style: normal);
   color: $color-white;
-
   margin-left: 6.8rem;
 }
 
 .leftbar-title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 22.1818px;
-  line-height: 3.2rem;
+  @include font($size: 22.1818px, $height: 3.2rem, $weight: 600, $style: normal);
   color: $color-white;
   margin: 0;
 }
@@ -49,9 +42,7 @@
 }
 
 .leftbar__footer-text-link {
-  font-weight: normal;
-  font-size: 1.4rem;
-  line-height: 1.0rem;
+  @include font($size: 1.4rem, $height: 1.0rem, $weight: 400, $style: normal);
   color: $color-white;
   opacity: 0.5;
 }

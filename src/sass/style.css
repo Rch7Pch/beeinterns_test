@@ -1,4 +1,4 @@
-body {
+.button, body {
   font-family: "Jost", sans-serif;
 }
 
@@ -8,10 +8,6 @@ body {
 
 html {
   font-size: 10px;
-}
-
-.path {
-  fill: #6B69F9;
 }
 
 body {
@@ -116,9 +112,9 @@ h1, h3, p {
 .button {
   width: 8.6rem;
   height: 3rem;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 400;
-  font-size: 1.2rem;
   line-height: 1.7rem;
   border: none;
   color: #FFFFFF;
@@ -167,25 +163,25 @@ h1, h3, p {
 }
 
 .account__name {
+  font-size: 1.4rem;
   font-style: normal;
   font-weight: 400;
-  font-size: 1.4rem;
   line-height: 1rem;
   color: #FFFFFF;
 }
 
 .account__status {
+  font-size: 1.3rem;
   font-style: normal;
   font-weight: 600;
-  font-size: 1.3rem;
   line-height: 1rem;
   color: #24CB8D;
 }
 
 .account__tariff {
+  font-size: 1.1rem;
   font-style: normal;
   font-weight: 400;
-  font-size: 1.1rem;
   line-height: 1rem;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -218,9 +214,9 @@ h1, h3, p {
 }
 
 .topbar__nav-link {
+  font-size: 1.4rem;
   font-style: normal;
   font-weight: 400;
-  font-size: 1.4rem;
   line-height: 1rem;
   color: #FFFFFF;
   opacity: 0.6;
@@ -235,11 +231,11 @@ h1, h3, p {
 }
 
 .coins__text {
-  margin-right: 1rem;
-  font-style: normal;
-  font-weight: normal;
   font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 400;
   line-height: 1rem;
+  margin-right: 1rem;
   color: #FFFFFF;
   background: rgba(255, 255, 255, 0.06);
   border-radius: 0.5rem;
@@ -250,9 +246,9 @@ h1, h3, p {
 }
 
 .coins__text > span:nth-child(3) {
-  font-style: normal;
-  font-weight: normal;
   font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 400;
   line-height: 1rem;
   color: #FFFFFF;
   opacity: 0.6;
@@ -283,18 +279,18 @@ h1, h3, p {
 }
 
 .leftbar-year {
+  font-size: 10.7331px;
   font-style: normal;
   font-weight: 500;
-  font-size: 10.7331px;
   line-height: 1.6rem;
   color: #FFFFFF;
   margin-left: 6.8rem;
 }
 
 .leftbar-title {
-  font-style: normal;
-  font-weight: bold;
   font-size: 22.1818px;
+  font-style: normal;
+  font-weight: 600;
   line-height: 3.2rem;
   color: #FFFFFF;
   margin: 0;
@@ -311,8 +307,9 @@ h1, h3, p {
 }
 
 .leftbar__footer-text-link {
-  font-weight: normal;
   font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
   line-height: 1rem;
   color: #FFFFFF;
   opacity: 0.5;
@@ -388,8 +385,9 @@ input:checked + .slider:before {
 }
 
 .menu__item {
-  font-weight: normal;
   font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
   line-height: 2rem;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
@@ -459,9 +457,9 @@ input:checked + .slider:before {
 }
 
 .menu-bottom__item-link {
-  font-style: normal;
-  font-weight: normal;
   font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
   line-height: 1rem;
   color: #FFFFFF;
   opacity: 0.5;
@@ -506,8 +504,9 @@ input:checked + .slider:before {
 }
 
 .weekly__header-desc {
-  font-weight: normal;
   font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 400;
   line-height: 1.6rem;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -516,9 +515,9 @@ input:checked + .slider:before {
 }
 
 .weekly__header-title {
-  font-style: normal;
-  font-weight: normal;
   font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 400;
   line-height: 1.8rem;
   color: #FFFFFF;
 }
@@ -530,7 +529,7 @@ input:checked + .slider:before {
 }
 
 .card {
-  width: 255px;
+  width: 25.5rem;
   background: #373846;
   border-radius: 0.6rem;
   cursor: pointer;
@@ -551,8 +550,9 @@ input:checked + .slider:before {
   position: absolute;
   margin: 1.5rem;
   padding: 0.4rem 0.5rem 0.4rem 0.6rem;
-  font-weight: 400;
   font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
   line-height: 1.2rem;
   text-align: center;
   color: #FFFFFF;
@@ -567,17 +567,18 @@ input:checked + .slider:before {
 }
 
 .card__title {
-  font-weight: normal;
   font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
   line-height: 1.2rem;
   color: #FFFFFF;
 }
 
 .card__desc {
   margin-top: 1rem;
-  font-style: normal;
-  font-weight: normal;
   font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
   line-height: 1.8rem;
   color: #FFFFFF;
   opacity: 0.5;
@@ -591,8 +592,9 @@ input:checked + .slider:before {
 }
 
 .card__footer span {
-  font-weight: normal;
   font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 400;
   line-height: 1rem;
   color: #FFFFFF;
 }

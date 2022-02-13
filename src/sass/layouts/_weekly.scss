@@ -14,9 +14,7 @@
 }
 
 .weekly__header-desc {
-  font-weight: normal;
-  font-size: 1.1rem;
-  line-height: 1.6rem;
+  @include font($size: 1.1rem, $height: 1.6rem, $weight: 400, $style: normal);
   text-transform: uppercase;
   color: $color-white;
   opacity: 0.4;
@@ -24,11 +22,8 @@
 }
 
 .weekly__header-title {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 2.2rem;
-  line-height: 1.8rem;
-  color: #FFFFFF;
+  @include font($size: 2.2rem, $height: 1.8rem, $weight: 400, $style: normal);
+  color: $color-white;
 }
 
 .cards {
@@ -38,7 +33,7 @@
 }
 
 .card {
-  width: 255px;
+  width: 25.5rem;
   background: $color-card;
   border-radius: .6rem;
   cursor: pointer;
@@ -63,12 +58,9 @@
   margin: 1.5rem;
   padding: .4rem .5rem .4rem .6rem;
 
-  font-weight: 400;
-  font-size: 1.2rem;
-  line-height: 1.2rem;
+  @include font($size: 1.2rem, $height: 1.2rem, $weight: 400, $style: normal);
   text-align: center;
   color: $color-white;
-
   background: $color-add;
   border-radius: .3rem;
 }
@@ -80,19 +72,13 @@
 }
 
 .card__title {
-  font-weight: normal;
-  font-size: 1.6rem;
-  line-height: 1.2rem;
+  @include font($size: 1.6rem, $height: 1.2rem, $weight: 400, $style: normal);
   color: $color-white;
 }
 
 .card__desc {
   margin-top: 1.0rem;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.4rem;
-  line-height: 1.8rem;
-
+  @include font($size: 1.4rem, $height: 1.8rem, $weight: 400, $style: normal);
   color: $color-white;
   opacity: 0.5;
 }
@@ -105,8 +91,6 @@
 }
 
 .card__footer span {
-  font-weight: normal;
-  font-size: 1.3rem;
-  line-height: 1.0rem;
+  @include font($size: 1.3rem, $height: 1.0rem, $weight: 400, $style: normal);
   color: $color-white;
 }

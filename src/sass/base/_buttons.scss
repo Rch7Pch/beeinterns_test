@@ -1,12 +1,8 @@
 .button {
   width: 8.6rem;
   height: 3.0rem;
-
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.2rem;
-  line-height: 1.7rem;
-
+  @extend %font-prim;
+  @include font($size: 1.2rem, $height: 1.7rem, $weight: 400, $style: normal);
   border: none;
   color: $color-white;
 
