@@ -22,18 +22,62 @@
 
 <body>
 
-  <div class="main">
-    <div class="leftbar">
-        <div class="leftbar__wrapper">
-          <div class="leftbar__header">
-            <div class="leftbar__header-logo">
-              <span class="icon-beeinterns">
-                    <span class="ico ico_beeinter"></span>
-                    <span class="leftbar-year">2022</span>
+  <header>
+    <div class="header__wrapper">
+      <div class="logo">
+        <span class="icon-beeinterns">
+          <span class="ico ico_beeinter"></span>
+          <span class="logo-year">2022</span>
+        </span>
+        <h1 class="logo-title">BEEINTERNS</h1>
+      </div>
+
+      <div class="topbar">
+        <div class="topbar__wrapper">
+
+          <div class="topbar__communication">
+            <ul class="navigation">
+              <li class="nav-item"><a href="#" class="item-link">FAQ</a></li>
+              <li class="nav-item"><a href="#" class="item-link">Поддержка</a></li>
+              <li class="nav-item"><a href="#" class="item-link">Настройки</a></li>
+            </ul>
+          </div>
+
+          <div class="topbar__coins">
+            <h2 class="coins__text">15 готовых дз</h2>
+            <h2 class="coins__text">18 лекций</h2>
+            <h2 class="coins__text">
+                <span class="icon-rectangle icon-rectangle_red">
+                    <span class="ico ico_lightning"></span>
+                </span>
+              <b>1200</b>
+              <span>часов</span>
+            </h2>
+          </div>
+
+          <div class="account-info">
+            <img src="src/img/avatar.png" alt="avatar user" width="58" height="44">
+            <div class="account-info__content">
+              <h2 class="account-info__name">Вася Пупкин
+                <span class="account-info__tariff">PRO</span>
+              </h2>
+              <span class="account-info__status">
+                <span class="icon-square icon-square_green"></span>
+                Online
               </span>
-              <h1 class="leftbar-title">BEEINTERNS</h1>
+
             </div>
           </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="leftbar">
+      <div class="leftbar">
+        <div class="leftbar__wrapper">
 
           <div class="leftbar__content">
             <ul class="leftbar-menu-up">
@@ -116,210 +160,139 @@
           </div>
         </div>
       </div>
-    <div class="topbar">
-      <div class="topbar__wrapper">
-
-        <div class="topbar__text">
-          <ul class="topbar__nav">
-            <li class="topbar__nav-list"><a href="#" class="topbar__nav-link">FAQ</a></li>
-            <li class="topbar__nav-list"><a href="#" class="topbar__nav-link">Поддержка</a></li>
-            <li class="topbar__nav-list"><a href="#" class="topbar__nav-link">Настройки</a></li>
-          </ul>
-        </div>
-        <div class="topbar__coins">
-          <h2 class="coins__text">15 готовых дз</h2>
-          <h2 class="coins__text">18 лекций</h2>
-          <h2 class="coins__text">
-                <span class="icon-rectangle icon-rectangle_red">
-                    <span class="ico ico_lightning"></span>
-                </span>
-            <b>1200</b>
-            <span>часов</span>
-          </h2>
-        </div>
-        <div class="account-info">
-          <img src="src/img/avatar.png" alt="avatar user" width="58" height="44">
-          <div class="account__content">
-            <h2 class="account__name">Вася Пупкин
-              <span class="account__tariff">PRO</span>
-            </h2>
-            <span class="account__status">
-                <span class="icon-square icon-square_green"></span>
-                Online
-              </span>
-
-          </div>
-        </div>
-      </div>
     </div>
-    <section class="weekly">
 
-      <div class="weekly_quests ">
-        <div class="weekly__header">
-          <div class="weekly__header-text">
-            <h3 class="weekly__header-desc">Базовый уровень</h3>
-            <h1 class="weekly__header-title">HTML/CSS</h1>
-          </div>
+    <div class="main">
+      <div class="weekly">
 
-          <div class="weekly__button">
-            <button type="button" class="button button_colored">Все лекции</button>
-            <button type="button" class="arrow_left"></button>
-            <button type="button" class="arrow_right"></button>
-          </div>
-        </div>
-
-        <div class="weekly__content">
-          <div class="cards">
-
-            <div class="card">
-              <span>Лекция</span>
-              <img src="src/img/weekly/weekly1.png" alt="Структура HTM img curses" width="255" height="144">
-              <div class="card__content">
-                <h1 class="card__title">Структура HTML</h1>
-                <p class="card__desc">Назначение блоков: head, body</p>
-              </div>
-              <div class="card__footer">
-                <span class="">01.02.2022</span>
-                <div class="card__button">
-                  <button type="button" class="button button_colored">Смотреть</button>
-                </div>
-              </div>
+        <div class="weekly_quests ">
+          <div class="weekly__header">
+            <div class="weekly__header-text">
+              <h3 class="weekly__header-desc">Базовый уровень</h3>
+              <h1 class="weekly__header-title">HTML/CSS</h1>
             </div>
 
-            <div class="card">
-              <span>Лекция</span>
-              <img src="src/img/weekly/weekly2.png" alt="Структура HTM img curses" width="255" height="144">
-              <div class="card__content">
-                <h1 class="card__title">Подключение стилей</h1>
-                <p class="card__desc">Виды подключения стилей. Подключение шрифтов</p>
-              </div>
-              <div class="card__footer">
-                <span>01.02.2022</span>
-                <div class="card__button">
-                  <button type="button" class="button button_colored">Смотреть</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <span>Лекция</span>
-              <img src="src/img/weekly/weekly3.png" alt="Структура HTM img curses" width="255" height="144">
-              <div class="card__content">
-                <h1 class="card__title">CSS</h1>
-                <p class="card__desc">Базовый синтаксис CSS: селекторы, классы</p>
-              </div>
-              <div class="card__footer">
-                <span>01.02.2022</span>
-                <div class="card__button">
-                  <button type="button" class="button button_colored">Смотреть</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <span>Лекция</span>
-              <img src="src/img/weekly/weekly4.png" alt="Структура HTM img curses" width="255" height="144">
-              <div class="card__content">
-                <h1 class="card__title">Наследие и каскад</h1>
-                <p class="card__desc">Наследие и каскад</p>
-              </div>
-              <div class="card__footer">
-                <span>01.02.2022</span>
-                <div class="card__button">
-                  <button type="button" class="button button_colored">Смотреть</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="weekly_quests ">
-        <div class="weekly__header">
-          <div class="weekly__header-text">
-            <h3 class="weekly__header-desc">Продвинутый уровень</h3>
-            <h1 class="weekly__header-title">HTML/CSS</h1>
-          </div>
-          <div class="weekly__header-nav">
             <div class="weekly__button">
               <button type="button" class="button button_colored">Все лекции</button>
               <button type="button" class="arrow_left"></button>
               <button type="button" class="arrow_right"></button>
             </div>
           </div>
+
+          <div class="weekly__content">
+            <div class="cards cards-base-level"></div>
+          </div>
         </div>
 
-        <div class="weekly__content">
-          <div class="cards">
-
-            <div class="card">
-              <span>Лекция</span>
-              <img src="src/img/weekly/weekly1.png" alt="Структура HTM img curses" width="255" height="144">
-              <div class="card__content">
-                <h1 class="card__title">HTML-формы</h1>
-                <p class="card__desc">HTML-формы</p>
-              </div>
-              <div class="card__footer">
-                <span>01.02.2022</span>
-                <div class="card__button">
-                  <button type="button" class="button button_colored">Смотреть</button>
-                </div>
-              </div>
+        <div class="weekly_quests ">
+          <div class="weekly__header">
+            <div class="weekly__header-text">
+              <h3 class="weekly__header-desc">Продвинутый уровень</h3>
+              <h1 class="weekly__header-title">HTML/CSS</h1>
             </div>
-
-            <div class="card">
-              <span>Лекция</span>
-              <img src="src/img/weekly/weekly2.png" alt="Структура HTM img curses" width="255" height="144">
-              <div class="card__content">
-                <h1 class="card__title">Flex</h1>
-                <p class="card__desc">Принципы современной верстки сайта на flex</p>
-              </div>
-              <div class="card__footer">
-                <span>01.02.2022</span>
-                <div class="card__button">
-                  <button type="button" class="button button_colored">Смотреть</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <span>Лекция</span>
-              <img src="src/img/weekly/weekly3.png" alt="Структура HTM img curses" width="255" height="144">
-              <div class="card__content">
-                <h1 class="card__title">Media и viewport</h1>
-                <p class="card__desc">Адаптивная верстка. Использование media и viewport</p>
-              </div>
-              <div class="card__footer">
-                <span>01.02.2022</span>
-                <div class="card__button">
-                  <button type="button" class="button button_colored">Смотреть</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <span>Лекция</span>
-              <img src="src/img/weekly/weekly4.png" alt="Структура HTM img curses" width="255" height="144">
-              <div class="card__content">
-                <h1 class="card__title">CSS Grid</h1>
-                <p class="card__desc">CSS Grid</p>
-              </div>
-              <div class="card__footer">
-                <span>01.02.2022</span>
-                <div class="card__button">
-                  <button type="button" class="button button_colored">Смотреть</button>
-                </div>
+            <div class="weekly__header-nav">
+              <div class="weekly__button">
+                <button type="button" class="button button_colored">Все лекции</button>
+                <button type="button" class="arrow_left"></button>
+                <button type="button" class="arrow_right"></button>
               </div>
             </div>
           </div>
+
+          <div class="weekly__content">
+            <div class="cards cards-pro-level"></div>
+          </div>
         </div>
+
       </div>
+    </div>
 
-
-
-    </section>
   </div>
+
+<!--  <div class="main">-->
+
+
+<!--    <div class="topbar">-->
+<!--      <div class="topbar__wrapper">-->
+
+<!--        <div class="topbar__text">-->
+<!--          <ul class="topbar__nav">-->
+<!--            <li class="topbar__nav-list"><a href="#" class="topbar__nav-link">FAQ</a></li>-->
+<!--            <li class="topbar__nav-list"><a href="#" class="topbar__nav-link">Поддержка</a></li>-->
+<!--            <li class="topbar__nav-list"><a href="#" class="topbar__nav-link">Настройки</a></li>-->
+<!--          </ul>-->
+<!--        </div>-->
+
+<!--        <div class="topbar__coins">-->
+<!--          <h2 class="coins__text">15 готовых дз</h2>-->
+<!--          <h2 class="coins__text">18 лекций</h2>-->
+<!--          <h2 class="coins__text">-->
+<!--                <span class="icon-rectangle icon-rectangle_red">-->
+<!--                    <span class="ico ico_lightning"></span>-->
+<!--                </span>-->
+<!--            <b>1200</b>-->
+<!--            <span>часов</span>-->
+<!--          </h2>-->
+<!--        </div>-->
+
+<!--        <div class="account-info">-->
+<!--          <img src="src/img/avatar.png" alt="avatar user" width="58" height="44">-->
+<!--          <div class="account__content">-->
+<!--            <h2 class="account__name">Вася Пупкин-->
+<!--              <span class="account__tariff">PRO</span>-->
+<!--            </h2>-->
+<!--            <span class="account__status">-->
+<!--                <span class="icon-square icon-square_green"></span>-->
+<!--                Online-->
+<!--              </span>-->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--      </div>-->
+<!--    </div>-->
+<!--    <section class="weekly">-->
+
+<!--      <div class="weekly_quests ">-->
+<!--        <div class="weekly__header">-->
+<!--          <div class="weekly__header-text">-->
+<!--            <h3 class="weekly__header-desc">Базовый уровень</h3>-->
+<!--            <h1 class="weekly__header-title">HTML/CSS</h1>-->
+<!--          </div>-->
+
+<!--          <div class="weekly__button">-->
+<!--            <button type="button" class="button button_colored">Все лекции</button>-->
+<!--            <button type="button" class="arrow_left"></button>-->
+<!--            <button type="button" class="arrow_right"></button>-->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--        <div class="weekly__content">-->
+<!--          <div class="cards cards-base-level"></div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--      <div class="weekly_quests ">-->
+<!--        <div class="weekly__header">-->
+<!--          <div class="weekly__header-text">-->
+<!--            <h3 class="weekly__header-desc">Продвинутый уровень</h3>-->
+<!--            <h1 class="weekly__header-title">HTML/CSS</h1>-->
+<!--          </div>-->
+<!--          <div class="weekly__header-nav">-->
+<!--            <div class="weekly__button">-->
+<!--              <button type="button" class="button button_colored">Все лекции</button>-->
+<!--              <button type="button" class="arrow_left"></button>-->
+<!--              <button type="button" class="arrow_right"></button>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--        <div class="weekly__content">-->
+<!--          <div class="cards cards-pro-level"></div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--    </section>-->
+<!--  </div>-->
 
 
 

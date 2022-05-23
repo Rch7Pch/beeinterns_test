@@ -2,7 +2,7 @@
   font-family: "Jost", sans-serif;
 }
 
-.card, .menu-bottom__item:hover, .leftbar__footer-text-link, .leftbar__wrapper .leftbar__footer-text-link, .topbar__nav-link, .arrow_right, .arrow_left, .button {
+.card, .menu-bottom__item:hover, .leftbar__footer-text-link, .leftbar__wrapper .leftbar__footer-text-link, .item-link, .arrow_right, .arrow_left, .button {
   transition: all 0.3s ease-out;
 }
 
@@ -12,6 +12,7 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
   background: #2B2C3A;
 }
 
@@ -29,6 +30,10 @@ ul {
 
 h1, h3, p {
   margin: 0;
+}
+
+.container {
+  display: flex;
 }
 
 .ico {
@@ -162,7 +167,7 @@ h1, h3, p {
   margin-left: 1.4rem;
 }
 
-.account__name {
+.account-info__name {
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 400;
@@ -170,7 +175,7 @@ h1, h3, p {
   color: #FFFFFF;
 }
 
-.account__status {
+.account-info__status {
   font-size: 1.3rem;
   font-style: normal;
   font-weight: 600;
@@ -178,7 +183,7 @@ h1, h3, p {
   color: #24CB8D;
 }
 
-.account__tariff {
+.account-info__tariff {
   font-size: 1.1rem;
   font-style: normal;
   font-weight: 400;
@@ -192,20 +197,30 @@ h1, h3, p {
   margin-left: 1.5rem;
 }
 
-.topbar__text {
-  display: flex;
+.topbar {
+  background: #2C2D3B;
+  padding-left: 40px;
 }
 
-.topbar__nav {
+.topbar__wrapper {
+  padding: 1.4rem 4.5rem 1.4rem 1rem;
   display: flex;
   align-items: center;
 }
 
-.topbar__nav-list {
+.navigation {
+  display: flex;
+}
+
+.nav-item {
   margin-right: 2.8rem;
 }
 
-.topbar__nav::after {
+.nav-item:nth-child(2) {
+  margin-right: 2.3rem;
+}
+
+.navigation::after {
   content: "";
   background: #D8D8D8;
   opacity: 0.1;
@@ -213,43 +228,49 @@ h1, h3, p {
   height: 2.4rem;
 }
 
-.topbar__nav-link {
+.item-link {
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 400;
   line-height: 1rem;
   color: #FFFFFF;
   opacity: 0.6;
+  mix-blend-mode: normal;
 }
-.topbar__nav-link:hover {
+.item-link:hover {
   opacity: 1;
 }
 
 .topbar__coins {
   display: flex;
-  align-items: center;
+  margin-left: 23.8rem;
 }
 
 .coins__text {
   font-size: 1.3rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 1rem;
+  line-height: 1.3rem;
   margin-right: 1rem;
   color: #FFFFFF;
   background: rgba(255, 255, 255, 0.06);
   border-radius: 0.5rem;
   width: 9.6rem;
   height: 2.4rem;
+  line-height: normal;
   text-align: center;
-  padding: 0.7rem 0.9rem 0;
+  padding: 0.7rem 0.9rem;
+}
+
+.coins__text:nth-child(3) {
+  margin-right: 6px;
 }
 
 .coins__text > span:nth-child(3) {
   font-size: 1.1rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 1rem;
+  line-height: 1.1rem;
   color: #FFFFFF;
   opacity: 0.6;
 }
@@ -259,10 +280,12 @@ h1, h3, p {
 }
 
 .leftbar {
-  background-color: rgba(156, 165, 236, 0.04);
-  width: 280px;
+  flex: 1 1;
+  height: calc(100vh - 50px);
+  background: #303242;
   position: sticky;
-  top: 0;
+  top: 50px;
+  padding-top: 0.3rem;
 }
 
 .leftbar__wrapper {
@@ -577,63 +600,6 @@ input:checked + .slider:before {
   margin-left: 2.4rem;
 }
 
-.topbar {
-  flex: 4;
-  border-bottom: 0.1rem solid rgba(216, 216, 216, 0.1);
-  height: 7.2rem;
-  position: sticky;
-  background: #2B2C3A;
-  z-index: 999;
-  top: 0;
-}
-
-.topbar__wrapper {
-  padding: 1.4rem 4.5rem 1.4rem 5.5rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.main {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.weekly {
-  margin: 11.2rem 5.5rem 0 5.5rem;
-  position: absolute;
-}
-
-.weekly_quests {
-  margin-bottom: 6rem;
-}
-
-.weekly__header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 2.5rem;
-}
-
-.weekly__header-desc {
-  font-size: 1.1rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.6rem;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  opacity: 0.4;
-  margin-bottom: 0.7rem;
-}
-
-.weekly__header-title {
-  font-size: 2.2rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.8rem;
-  color: #FFFFFF;
-}
-
 .cards {
   display: flex;
   flex-direction: row;
@@ -708,6 +674,82 @@ input:checked + .slider:before {
   font-style: normal;
   font-weight: 400;
   line-height: 1rem;
+  color: #FFFFFF;
+}
+
+header {
+  width: 100%;
+  height: 5rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  padding: 1.4rem 0 3rem;
+  height: 100%;
+}
+
+.logo {
+  padding: 1.9rem 11.8rem 1.5rem 3rem;
+  cursor: pointer;
+  background: #303242;
+}
+
+.logo-year {
+  margin-left: 6.8rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.logo-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+
+.main {
+  flex: 4 1;
+  margin-top: 4.3rem;
+}
+
+.weekly {
+  margin: 0rem 5rem;
+}
+
+.weekly_quests {
+  margin-bottom: 6rem;
+}
+
+.weekly__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+
+.weekly__header-desc {
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6rem;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  opacity: 0.4;
+  margin-bottom: 0.7rem;
+}
+
+.weekly__header-title {
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.8rem;
   color: #FFFFFF;
 }
 

@@ -4,17 +4,17 @@
   margin-left: 1.4rem;
 }
 
-.account__name {
+.account-info__name {
   @include font($size: 1.4rem, $height: 1.0rem, $weight: 400, $style: normal);
   color: $color-white;
 }
 
-.account__status {
+.account-info__status {
   @include font($size: 1.3rem, $height: 1.0rem, $weight: 600, $style: normal);
   color: $color-green;
 }
 
-.account__tariff {
+.account-info__tariff {
   @include font($size: 1.1rem, $height: 1.0rem, $weight: 400, $style: normal);
   text-transform: uppercase;
   color: $color-white;

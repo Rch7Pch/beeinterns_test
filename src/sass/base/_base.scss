@@ -4,6 +4,7 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
   background: $color-background;
   @extend %font-prim;
 }
@@ -24,3 +25,7 @@ h1, h3, p {
   margin: 0;
 }
 
+.container {
+  display: flex;
+  //margin-top: 4.3rem;
+}

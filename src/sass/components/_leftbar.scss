@@ -1,13 +1,24 @@
 .leftbar {
-  background-color: $color-background-add;
-  width: 280px;
+  flex: 1 1;
+  height: calc(100vh - 50px);
+  background: #303242;
   position: sticky;
-  top: 0;
-  //height: calc(100vh - 50px);
+  top: 50px;
+  padding-top: 0.3rem;
+
 }
 
+//.leftbar {
+//  background-color: $color-background-add;
+//  width: 280px;
+//  position: sticky;
+//  top: 0;
+//  //height: calc(100vh - 50px);
+//}
+
 .leftbar__wrapper {
-  padding-top: 9px;.leftbar {
+  padding-top: 9px;
+  .leftbar {
   background-color: $color-background-add;
   width: 280px;
   position: sticky;

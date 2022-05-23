@@ -1,0 +1,68 @@
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card {
+  width: 25.5rem;
+  background: $color-card;
+  border-radius: .6rem;
+  cursor: pointer;
+  margin-right: 1.1rem;
+
+  @extend %transition;
+
+  &:hover {
+    box-shadow: 0 0 12px rgba(111, 110, 255, 0.5);
+    transform: scale(1.1);
+  }
+}
+
+.card:nth-child(4) {
+  margin-right: 0;
+}
+
+.card>span {
+  width: 5.0rem;
+  height: 2.0rem;
+  position: absolute;
+  margin: 1.5rem;
+  padding: .4rem .5rem .4rem .6rem;
+
+  @include font($size: 1.2rem, $height: 1.2rem, $weight: 400, $style: normal);
+  text-align: center;
+  color: $color-white;
+  background: $color-add;
+  border-radius: .3rem;
+}
+
+.card__content {
+  margin: 1.0rem 2.5rem 3.3rem 1.5rem;
+  border-bottom: 0.1rem solid rgba(216, 216, 216, 0.1);
+  padding-bottom: 3.3rem;
+}
+
+.card__title {
+  @include font($size: 1.6rem, $height: 1.2rem, $weight: 400, $style: normal);
+  color: $color-white;
+}
+
+.card__desc {
+  margin-top: 1.0rem;
+  @include font($size: 1.4rem, $height: 1.8rem, $weight: 400, $style: normal);
+  color: $color-white;
+  opacity: 0.5;
+}
+
+.card__footer {
+  margin: 1.5rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card__footer span {
+  @include font($size: 1.3rem, $height: 1.0rem, $weight: 400, $style: normal);
+  color: $color-white;
+}
