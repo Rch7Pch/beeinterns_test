@@ -92,8 +92,9 @@ h1, h3, p {
 
 .ico_beeinter {
   width: 40.43px;
-  height: 7.68px;
+  height: 8.68px;
   background-image: url("../img/logo.svg");
+  background-repeat: no-repeat;
 }
 
 .ico_action {
@@ -777,12 +778,11 @@ header {
   display: -ms-flexbox;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  padding: 1.4rem 0 3rem;
   height: 100%;
 }
 
 .logo {
-  padding: 1.9rem 11.8rem 1.5rem 3rem;
+  padding: 1.9rem 12rem 1.5rem 3rem;
   cursor: pointer;
   background: #303242;
 }
