@@ -13,6 +13,7 @@
 .account-info__name {
   @include font($size: 1.4rem, $height: 1.0rem, $weight: 400, $style: normal);
   color: $color-white;
+  margin: .7rem 0;;
 }
 
 .account-info__status {
