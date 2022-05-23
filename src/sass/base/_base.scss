@@ -27,5 +27,7 @@ h1, h3, p {
 
 .container {
   display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   //margin-top: 4.3rem;
 }

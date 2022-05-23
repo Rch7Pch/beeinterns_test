@@ -16,6 +16,7 @@
     border-radius: .4rem;
     &:hover {
       box-shadow: 0 0 12px rgba(111, 110, 255, 0.5);
+      -webkit-box-shadow: 0 0 12px rgba(111, 110, 255, 0.5);
     }
     &:active {
       background: $color-violet-light;
@@ -37,6 +38,7 @@
 
   &:hover {
     box-shadow: 0 0 12px rgba(111, 110, 255, 0.5);
+    -webkit-box-shadow: 0 0 12px rgba(111, 110, 255, 0.5);
   }
   &:active {
     opacity: 0.07;

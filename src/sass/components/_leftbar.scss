@@ -1,5 +1,8 @@
 .leftbar {
   flex: 1 1;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1;
+
   height: calc(100vh - 50px);
   background: #303242;
   position: sticky;
@@ -79,6 +82,19 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
   }
 
   .switch {
@@ -101,6 +117,7 @@
     bottom: 0;
 
     -webkit-transition: .4s;
+    -o-transition: .4s;
     transition: .4s;
 
     //opacity: 0.2;
@@ -116,13 +133,16 @@
     //left: -.4rem;
     bottom: .2rem;
     background-color: $color-add;
+
     -webkit-transition: .4s;
+    -o-transition: .4s;
     transition: .4s;
   }
 
   input:checked + .slider {
     color: $color-add;
     box-shadow: 0 0 1.2rem rgba(111, 110, 255, 0.5);
+    -webkit-box-shadow: 0 0 1.2rem rgba(111, 110, 255, 0.5);
 
     //opacity: 0.2;
   }
@@ -130,6 +150,7 @@
   input:focus + .slider {
     color: $color-add;
     box-shadow: 0 0 1.2rem rgba(111, 110, 255, 0.5);
+    -webkit-box-shadow: 0 0 1.2rem rgba(111, 110, 255, 0.5);
   }
 
   input:checked + .slider:before {
@@ -198,6 +219,16 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
 }
 
 .switch {
@@ -220,6 +251,7 @@
   bottom: 0;
 
   -webkit-transition: .4s;
+  -o-transition: .4s;
   transition: .4s;
 
   //opacity: 0.2;
@@ -235,13 +267,16 @@
   //left: -.4rem;
   bottom: .2rem;
   background-color: $color-add;
+
   -webkit-transition: .4s;
+  -o-transition: .4s;
   transition: .4s;
 }
 
 input:checked + .slider {
   color: $color-add;
   box-shadow: 0 0 1.2rem rgba(111, 110, 255, 0.5);
+  -webkit-box-shadow: 0 0 1.2rem rgba(111, 110, 255, 0.5);
 
   //opacity: 0.2;
 }
@@ -249,6 +284,7 @@ input:checked + .slider {
 input:focus + .slider {
   color: $color-add;
   box-shadow: 0 0 1.2rem rgba(111, 110, 255, 0.5);
+  -webkit-box-shadow: 0 0 1.2rem rgba(111, 110, 255, 0.5);
 }
 
 input:checked + .slider:before {

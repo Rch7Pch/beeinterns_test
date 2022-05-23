@@ -1,7 +1,7 @@
 .weekly {
   //margin: 11.2rem 5.5rem 0 5.5rem;
   //position: absolute;
-  margin: 0rem 5rem;
+  margin: 0 5rem;
 }
 
 .weekly_quests {
@@ -11,6 +11,12 @@
 .weekly__header {
   display: flex;
   justify-content: space-between;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+
   margin-bottom: 2.5rem;
 }
 
