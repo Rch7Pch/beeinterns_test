@@ -42,11 +42,12 @@
   margin: 1.5rem;
   padding: .4rem .5rem .4rem .6rem;
 
-  @include font($size: 1.2rem, $height: 1.2rem, $weight: 400, $style: normal);
+  @include font($size: 1.2rem, $height: 0rem, $weight: 400, $style: normal);
   text-align: center;
   color: $color-white;
   background: $color-add;
   border-radius: .3rem;
+  line-height: normal;
 }
 
 .card__content {
