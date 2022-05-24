@@ -688,6 +688,8 @@ input:checked + .slider:before {
   border-radius: 0.6rem;
   cursor: pointer;
   margin-right: 1.1rem;
+  display: flex;
+  flex-direction: column;
 }
 .card:hover {
   box-shadow: 0 0 12px rgba(111, 110, 255, 0.5);
@@ -720,8 +722,6 @@ input:checked + .slider:before {
 
 .card__content {
   margin: 1rem 2.5rem 3.3rem 1.5rem;
-  border-bottom: 0.1rem solid rgba(216, 216, 216, 0.1);
-  padding-bottom: 3.3rem;
 }
 
 .card__title {
@@ -754,6 +754,10 @@ input:checked + .slider:before {
   -ms-flex-align: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
+  margin-top: auto;
+  /* margin-bottom: 5px; */
+  border-bottom: 0.1rem solid rgba(216, 216, 216, 0.1);
+  padding-bottom: 3.3rem;
 }
 
 .card__footer span {
